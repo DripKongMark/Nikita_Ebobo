@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
+/* Header/logo Title */
+.header {
+    z-index:2;
+    padding: 80px;
+    text-align: center;
+    background: linear-gradient(pink, blue);
+    color: pink;
+    /* rgb(180,237,42) */
+    /* rgb(255,213,11) */
+    
+}
+
+/* .parallax {
+    /* The image used */
+    /* background: url(img/parallax.png); */
+
+    /* Set a specific height */
+    
+    /* min-height: 1000px; */
+
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+/* } */
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    padding: 30px;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: linear-gradient(blue, pink);
+    color: rgb(164,224,236); /*#FFB174*/
+    /* rgb(180,237,42) */
+    
+}
+
+.text_block{
+    width: 900px;
+    height: 700px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.3);
+    margin-left: 230px;
+    margin-bottom: 300px;
+}
+
+.block_border{
+    padding: 50px;
+    margin-top: 300px;
+}
+
+.border{
+    
+    width: 800px;
+    height: 600px;
+    border-color: rgb(13,195,246);
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.photo_block{
+    padding: 50px;
+    padding-left: 70px;
+
+}
+
+.albom_name{
+    color: black;
+    margin-left: -20px;
+}
+
+.lol{
+    width: 600px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo{
+    /* background: url(img/parallax.png); */
+    /* background-size: cover; */
+    /* border-radius: 10px; */
+    /* box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.3); */
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    color: black;
+    text-indent: 15px;
+}
+
+.discription{
+    width: 300px;
+    height: 25px;
+    display: inline-block;
+    color: black;
+    margin-left: 500px;
+}
+
+.mail{
+    width: 100%;
+    height: 30px;
+    display: inline-block;
+    color: black;
+    margin-left: 12px;
+    display: flex;
+}
+
+.cart{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-size: cover;
+    background: url(img/cart.png);
+    display: flex;
+    margin-left: 270px;
+}
+
+.bought{
+    width: 50px;
+    height: 30px;
+    display: inline-block;
+    background: rgb(13,195,246);
+    border-radius: 10px;
+    display: flex;
+    
+    margin-left: 30px;
+    margin: auto;
+    color: white;
+}
+
+.container{
+    display: inline-block;
+    margin-left: 89px;
+}
+
+.prev_track{
+    width: 45px;
+    height: 45px;
+    border-radius: 500px;
+    background: url(img/prev.png);
+    background-size: cover;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.play_pause{
+    width: 45px;
+    height: 45px;
+    border-radius: 500px;
+    background: url(img/play.png);
+    background-size: cover;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.next_track{
+    width: 45px;
+    height: 45px;
+    border-radius: 500px;
+    background: url(img/next.png);
+    background-size: cover;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.player{
+    width: 400px;
+    height: 45px;
+    background: black;
+    display: inline-block;
+    margin-left: 50px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 0;
+}
+
+.plau_sound{
+    width: 350px;
+    height: 35px;
+    background: white;
+    z-index: 20000;
+    top: 0;
+    position: absolut;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    border-radius: 100%;
+    background: #7ac9f9;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    opacity: 100%;
+    transition: opacity 0.5s;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.onTop {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    background: url(img/top.png);
+    background-size: cover;
+    z-index: 666;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    border-color: rgb(229,159,81);
+    border-radius: 100px;
+    -webkit-transition: all 0.5s ease;;
+    -moz-transition: all 0.5s ease;;
+    -o-transition: all 0.5s ease;;
+    transition: all 0.5s ease;
+}
+
+.onTop.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 695px){
+.row{
+    flex-direction: column;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
